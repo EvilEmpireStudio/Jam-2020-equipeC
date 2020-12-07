@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 4944103756850962884}
   - component: {fileID: 4944103756850962885}
   - component: {fileID: 4944103756850962886}
+  - component: {fileID: -2644600287469783752}
   - component: {fileID: 4944103756850962882}
+  - component: {fileID: -8597700014529778986}
   m_Layer: 0
   m_Name: BasicObstacle
   m_TagString: Untagged
@@ -28,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4944103756850962887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,6 +109,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &-2644600287469783752
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944103756850962887}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &4944103756850962882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 242fbdb0f3b6a9a40bb9df34dafa3e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrain: {fileID: 0}
+  destroyOnLeaveTerrain: 1
   onExitTerrain:
     m_PersistentCalls:
       m_Calls:
@@ -134,3 +157,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &-8597700014529778986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944103756850962887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd859aa58b1bae42b0e905abb4aca21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bumpStrength: 3
