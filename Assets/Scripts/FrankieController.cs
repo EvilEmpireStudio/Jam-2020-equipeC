@@ -27,7 +27,7 @@ public class FrankieController : MonoBehaviour
         List<Obstacle> obstacles = defendZone.colliders
             .FindAll( collider => collider.GetComponent<Obstacle>() != null )
             .ConvertAll<Obstacle>( collider => collider.GetComponent<Obstacle>() );
-            
+
         foreach( var obstacle in obstacles ) {
             obstacle.DestroyObstacle( this ); 
         }
