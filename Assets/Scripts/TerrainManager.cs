@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class TerrainManager : MonoBehaviour
 {
+    public static TerrainManager INSTANCE;
+
     [SerializeField] protected float travellingSpeed = 3f;
     public float TravellingSpeed => travellingSpeed;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        INSTANCE = this;
     }
 
     // Update is called once per frame

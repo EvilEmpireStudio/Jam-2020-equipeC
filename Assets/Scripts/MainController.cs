@@ -10,7 +10,7 @@ public class MainController : MonoBehaviour
     [SerializeField] protected float defaultRecoveryTime = 0.25f;
 
     private Vector2 currentSpeed = Vector2.zero;
-    private Vector3 MovementSpeed => new Vector3(currentSpeed.x + speedBump.x, currentSpeed.y + speedBump.y, 0);
+    public Vector3 MovementSpeed => new Vector3(currentSpeed.x + speedBump.x, currentSpeed.y + speedBump.y, 0);
 
     private Vector2 speedBump = Vector2.zero;
     private float recoverySpeed = default;

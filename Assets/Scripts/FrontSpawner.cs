@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FrontSpawner : MonoBehaviour
 {
-    [SerializeField] protected TerrainManager terrain = default;
     [SerializeField] protected TerrainObject obstaclePrefab = default;
     [SerializeField] protected float width = 5;
     [SerializeField] protected float frequency = 1;
@@ -20,7 +19,7 @@ public class FrontSpawner : MonoBehaviour
 
     private void SpawnObstacle() {
         var offset = Random.Range(-width/2, width/2);
-        Instantiate(obstaclePrefab, transform.position + new Vector3(offset, 0, 0), Quaternion.identity).Terrain = terrain;
+        Instantiate(obstaclePrefab, transform.position + new Vector3(offset, 0, 0), Quaternion.identity);
     }
     
     private void OnDrawGizmos() {

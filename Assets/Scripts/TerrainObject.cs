@@ -8,7 +8,7 @@ public class TerrainObject : MonoBehaviour
     [SerializeField] protected bool destroyOnLeaveTerrain = true;
     [SerializeField] protected UnityEvent onExitTerrain = default;
 
-    public TerrainManager Terrain { get; set; }
+    public TerrainManager Terrain => TerrainManager.INSTANCE;
     new protected Rigidbody2D rigidbody;
 
     private void Start() {

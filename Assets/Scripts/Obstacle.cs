@@ -15,4 +15,11 @@ public class Obstacle : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void DestroyObstacle(FrankieController by) {
+        if( gameObject.activeSelf ) {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+    }
 }
