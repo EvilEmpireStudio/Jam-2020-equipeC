@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class MainController : MonoBehaviour
+public class QuaterbackController : MonoBehaviour
 {
-    [SerializeField] protected float maxSpeed = 10f;
-    [SerializeField, Min(0)] protected float accelerationTime = 0.3f;
-    [SerializeField] protected float defaultRecoveryTime = 0.25f;
+    [SerializeField] protected float forwardSpeed = 3f;
+    [SerializeField] protected float lateralSpeed = 10f;
+    [SerializeField, Min(0)] protected float lateralAccelerationTime = 0.3f;
+    [SerializeField] protected float defaultChocRecoveryTime = 0.25f;
 
-    private Vector2 currentSpeed = Vector2.zero;
-    public Vector3 MovementSpeed => new Vector3(currentSpeed.x + speedBump.x, currentSpeed.y + speedBump.y, 0);
+    private float currentLateralSpeed = 0;
+    public Vector3 MovementSpeed => new Vector3(currentLateralSpeed + speedBump.x, forwardSpeed + speedBump.y, 0);
 
     private Vector2 speedBump = Vector2.zero;
     private float recoverySpeed = default;
@@ -23,17 +24,16 @@ public class MainController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        var inputMovement = Input.GetAxis("Horizontal");
-        var targetSpeed = Vector2.right * inputMovement * maxSpeed;
+        var targetLateralSpeed = Input.GetAxis("Horizontal") * lateralSpeed;
 
-        if( Mathf.Sign( currentSpeed.x ) != Mathf.Sign( targetSpeed.x ) )
-            currentSpeed.x = 0;
+        if( Mathf.Sign( currentLateralSpeed ) != Mathf.Sign( targetLateralSpeed ) )
+            currentLateralSpeed = 0;
 
 
-        if( accelerationTime > 0 )
-            currentSpeed = Vector2.MoveTowards(currentSpeed, targetSpeed, (maxSpeed / accelerationTime) * Time.fixedDeltaTime);
+        if( lateralAccelerationTime > 0 )
+            currentLateralSpeed = Mathf.MoveTowards(currentLateralSpeed, targetLateralSpeed, (lateralSpeed / lateralAccelerationTime) * Time.fixedDeltaTime);
         else
-            currentSpeed = targetSpeed;
+            currentLateralSpeed = targetLateralSpeed;
 
         speedBump = Vector2.MoveTowards( speedBump, Vector2.zero, recoverySpeed * Time.deltaTime);
         if( speedBump.magnitude < 0.01 )
@@ -41,7 +41,7 @@ public class MainController : MonoBehaviour
     }
 
     public void Bump( Vector2 bump ) {
-        Bump( bump, defaultRecoveryTime );
+        Bump( bump, defaultChocRecoveryTime );
     }
 
     public void Bump( Vector2 bump, float recoveryTime ) {
@@ -53,12 +53,12 @@ public class MainController : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = MovementSpeed;
     }
     
-    private void OnDrawGizmos() {
+    private void OnDrawGizmosSelected() {
         #if UNITY_EDITOR
         
         Handles.Label(transform.position, 
             "Input movement: " + Input.GetAxis("Horizontal") + "\n" +
-            "Velocity: " + currentSpeed.x
+            "Lateral velocity: " + currentLateralSpeed
         );
         #endif
 

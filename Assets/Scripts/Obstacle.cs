@@ -10,7 +10,7 @@ public class Obstacle : MonoBehaviour
     public ParticleSystem defendedParticleSystem = default;
     
     private void OnTriggerEnter2D(Collider2D other) {
-        var quaterback = other.gameObject.GetComponent<MainController>();
+        var quaterback = other.gameObject.GetComponent<QuaterbackController>();
         if( quaterback != null ) {
             quaterback.Bump( Vector2.down * bumpStrength );
             

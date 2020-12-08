@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8260526909917853037}
   - component: {fileID: 8260526909917853038}
   - component: {fileID: 8260526909917853039}
-  - component: {fileID: 8260526909917853032}
   - component: {fileID: 8260526909917853033}
   m_Layer: 0
   m_Name: BasicObstacle
@@ -130,33 +129,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8260526909917853032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8260526909917853034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 242fbdb0f3b6a9a40bb9df34dafa3e9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyOnLeaveTerrain: 1
-  onExitTerrain:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8260526909917853034}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &8260526909917853033
 MonoBehaviour:
   m_ObjectHideFlags: 0

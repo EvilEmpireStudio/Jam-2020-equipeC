@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrontSpawner : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
-    [SerializeField] protected TerrainObject obstaclePrefab = default;
+    [SerializeField] protected GameObject obstaclePrefab = default;
     [SerializeField] protected float width = 5;
     [SerializeField] protected float frequency = 1;
 
