@@ -4,27 +4,36 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] protected GameObject obstaclePrefab = default;
-    [SerializeField] protected float width = 5;
-    [SerializeField] protected float frequency = 1;
+    [SerializeField] protected GameObject prefabToSpawn = default;
+    [SerializeField] protected float width = 0f;
+    [SerializeField, Range(0, 360)] protected float spawnAngle = 0f;
 
-    protected float nextThrow = 3f;
+    // protected float nextThrow = 3f;
 
-    private void FixedUpdate() {
-        if( Time.timeSinceLevelLoad > nextThrow ) {
-            SpawnObstacle();
-            nextThrow = Time.timeSinceLevelLoad + frequency;
-        }
-    }
+    // private void FixedUpdate() {
+    //     if( Time.timeSinceLevelLoad > nextThrow ) {
+    //         SpawnObstacle();
+    //         nextThrow = Time.timeSinceLevelLoad + frequency;
+    //     }
+    // }
 
-    private void SpawnObstacle() {
-        var offset = Random.Range(-width/2, width/2);
-        Instantiate(obstaclePrefab, transform.position + new Vector3(offset, 0, 0), Quaternion.identity);
+    public void SpawnObject() {
+        var spawnPosition = transform.position + transform.rotation * Vector3.right * Random.Range(-width/2, width/2);
+        Instantiate(prefabToSpawn, spawnPosition, Quaternion.Euler(0, spawnAngle, 0));
     }
     
-    private void OnDrawGizmos() {
-        Gizmos.color = Color.green;
-        var offset = new Vector3(width / 2, 0, 0);
-        Gizmos.DrawLine( transform.position - offset, transform.position + offset);
+    private void OnDrawGizmosSelected() {
+        var leftPosition = transform.position + transform.rotation * Vector3.right * (-width/2);
+        var rightPosition = transform.position + transform.rotation * Vector3.right * (width/2);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine( leftPosition, rightPosition );
+
+        var dirVector = Quaternion.Euler(0, spawnAngle, 0) * Vector3.down;
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawLine( leftPosition, leftPosition + dirVector );
+        Gizmos.DrawLine( transform.position, transform.position + dirVector );
+        Gizmos.DrawLine( rightPosition, rightPosition + dirVector );
     }
 }

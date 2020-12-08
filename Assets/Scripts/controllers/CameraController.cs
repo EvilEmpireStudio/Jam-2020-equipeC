@@ -1,16 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public QuaterbackController targetPlayer;
-    [Range(0, 5)] public float followStrength = 0.8f;
+    [SerializeField] protected QuaterbackController targetPlayer;
+    [SerializeField, Range(0, 5)] protected float followStrength = 0.8f;
+    [SerializeField] public float offsetY = 0.5f;
 
+    private bool follow = false;
     // Update is called once per frame
     void Update()
     {
-        var newY =  Mathf.Lerp(transform.position.y, targetPlayer.transform.position.y, followStrength * Time.deltaTime);
+        if( !follow ) return;
+        
+        var newY =  Mathf.Lerp(transform.position.y, targetPlayer.transform.position.y + offsetY, followStrength * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
+
+    public void ShouldFollow( bool value ) {
+        follow = value;
+    } 
 }

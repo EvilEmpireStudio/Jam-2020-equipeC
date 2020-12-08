@@ -7,12 +7,23 @@ public class Obstacle : MonoBehaviour
 {
     public float bumpStrength = 1;
     public UnityEvent OnDefended = default;
-    public ParticleSystem defendedParticleSystem = default;
+    public UnityEvent OnHitQuaterback = default;
+    public UnityEvent OnHitFrankie = default;
     
     private void OnTriggerEnter2D(Collider2D other) {
-        var quaterback = other.gameObject.GetComponent<QuaterbackController>();
-        if( quaterback != null ) {
+        QuaterbackController quaterback;
+        if( other.gameObject.TryGetComponent<QuaterbackController>(out quaterback) ) {
+            OnHitQuaterback?.Invoke();
             quaterback.Bump( Vector2.down * bumpStrength );
+            
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+
+        FrankieController frankie;
+        if( other.gameObject.TryGetComponent<FrankieController>(out frankie) ) {
+            OnHitFrankie?.Invoke();
+            // frankie.Bump( Vector2.down * bumpStrength );
             
             gameObject.SetActive(false);
             Destroy(gameObject);
@@ -22,7 +33,7 @@ public class Obstacle : MonoBehaviour
     public void DestroyObstacle(FrankieController by) {
         if( gameObject.activeSelf ) {
             OnDefended?.Invoke();
-            Instantiate(defendedParticleSystem, transform.position, transform.rotation).Play();
+
             gameObject.SetActive(false);
             Destroy(gameObject);
         }
