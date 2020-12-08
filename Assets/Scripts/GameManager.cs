@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public void Lose() {
-        StartCoroutine(LoadSceneAfterDelay("mainScene", 3f));
+        StartCoroutine(LoadSceneAfterDelay(SceneManager.GetActiveScene().name, 3f));
     }
 
     public void Win() {
-        StartCoroutine(LoadSceneAfterDelay("mainScene", 3f));
+        StartCoroutine(LoadSceneAfterDelay(SceneManager.GetActiveScene().name, 3f));
     }
  
     IEnumerator LoadSceneAfterDelay(string sceneName, float delay)
