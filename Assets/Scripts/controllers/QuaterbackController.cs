@@ -52,6 +52,21 @@ public class QuaterbackController : MonoBehaviour
     private bool isDown = false;
     public bool IsDown => isDown;
 
+    private Queue<FrankieController> downFrankies = new Queue<FrankieController>();
+    public void FrankieDown( FrankieController frankie ) {
+        downFrankies.Enqueue( frankie );
+    }
+
+    public void RaiseFrankie( int number = 1 ) {
+        for (int i = 0; i < number; i++)
+        {
+            var nextFrankieToRise = downFrankies.Dequeue();
+            if( nextFrankieToRise != null && nextFrankieToRise.IsDown ) {
+                nextFrankieToRise.Rise();
+            }
+        }
+    }
+
     public void HitBy(Obstacle obstacle) {
         isDown = true;
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;

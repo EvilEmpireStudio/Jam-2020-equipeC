@@ -39,6 +39,12 @@ public class FrankieController : MonoBehaviour
         isDown = true;
         if( downParticles != null )
             Instantiate(downParticles, transform.position, transform.rotation).Play();
+        quaterback.FrankieDown(this);
+    }
+
+    internal void Rise()
+    {
+        isDown = false;
     }
 
     private void DestroyObstacles()
