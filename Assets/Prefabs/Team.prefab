@@ -597,7 +597,6 @@ MonoBehaviour:
   downParticles: {fileID: 0}
   speed: 10
   followStrengh: 0.75
-  isDown: 0
 --- !u!50 &241654411851847086
 Rigidbody2D:
   serializedVersion: 4
@@ -829,7 +828,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 41e78a32d5a2b964ab7cdc9e0585b20c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -903,7 +902,6 @@ MonoBehaviour:
   downParticles: {fileID: 0}
   speed: 10
   followStrengh: 0.75
-  isDown: 0
 --- !u!50 &241654412130615768
 Rigidbody2D:
   serializedVersion: 4
@@ -994,7 +992,6 @@ MonoBehaviour:
   downParticles: {fileID: 0}
   speed: 10
   followStrengh: 0.75
-  isDown: 0
 --- !u!50 &241654412293660563
 Rigidbody2D:
   serializedVersion: 4
@@ -1277,7 +1274,6 @@ MonoBehaviour:
   downParticles: {fileID: 0}
   speed: 10
   followStrengh: 0.75
-  isDown: 0
 --- !u!50 &241654412654976667
 Rigidbody2D:
   serializedVersion: 4
