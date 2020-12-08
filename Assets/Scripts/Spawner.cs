@@ -18,18 +18,24 @@ public class Spawner : MonoBehaviour
     // }
 
     public void SpawnObject() {
+        if( prefabToSpawn == null ) return;
+
         var spawnPosition = transform.position + transform.rotation * Vector3.right * Random.Range(-width/2, width/2);
-        Instantiate(prefabToSpawn, spawnPosition, Quaternion.Euler(0, spawnAngle, 0));
+        var instance = Instantiate(prefabToSpawn, spawnPosition, Quaternion.Euler(0, spawnAngle, 0));
+        
+        Triggerable triggerable;
+        if( instance.TryGetComponent<Triggerable>(out triggerable) )
+            triggerable.Triggered();
     }
     
     private void OnDrawGizmosSelected() {
         var leftPosition = transform.position + transform.rotation * Vector3.right * (-width/2);
         var rightPosition = transform.position + transform.rotation * Vector3.right * (width/2);
 
-        Gizmos.color = Color.red;
+        Gizmos.color = new Color(0.9f, 0, 1, 1);
         Gizmos.DrawLine( leftPosition, rightPosition );
 
-        var dirVector = Quaternion.Euler(0, spawnAngle, 0) * Vector3.down;
+        var dirVector = Quaternion.Euler(0, 0, spawnAngle) * Vector3.down;
 
         Gizmos.color = Color.blue;
         Gizmos.DrawLine( leftPosition, leftPosition + dirVector );

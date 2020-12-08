@@ -5,7 +5,7 @@ public class Triggerable : MonoBehaviour
 {
     public UnityEvent onTriggered = default;
     
-    internal void TriggeredBy(QuaterbackController quaterback)
+    internal void Triggered()
     {
         onTriggered?.Invoke();
     }
