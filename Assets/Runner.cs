@@ -31,7 +31,7 @@ public class Runner : MonoBehaviour
         var arrowSpot = transform.position + transform.up * 3f;
 
         Gizmos.DrawLine(transform.position, arrowSpot);
-        Gizmos.DrawLine(arrowSpot, arrowSpot - transform.up * 0.3f + transform.forward * 0.3f);
-        Gizmos.DrawLine(arrowSpot, arrowSpot - transform.up * 0.3f - transform.forward * 0.3f);
+        Gizmos.DrawLine(arrowSpot, arrowSpot - transform.up * 0.3f + transform.right * 0.3f);
+        Gizmos.DrawLine(arrowSpot, arrowSpot - transform.up * 0.3f - transform.right * 0.3f);
     }
 }
