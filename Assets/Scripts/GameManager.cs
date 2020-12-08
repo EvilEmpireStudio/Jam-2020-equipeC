@@ -8,8 +8,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager INSTANCE;
 
-    public UnityEvent onWin = default;
-    public UnityEvent onLose = default;
+    [SerializeField] protected QuaterbackController playerQuaterback = default;
+    [Header("Callbacks")]
+    [SerializeField] protected UnityEvent onWin = default;
+    [SerializeField] protected UnityEvent onLose = default;
+    public QuaterbackController Player => playerQuaterback;
 
     private void Start() {
         INSTANCE = this;

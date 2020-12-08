@@ -23,6 +23,7 @@ public class Trigger : MonoBehaviour
         Gizmos.color = Color.green;
 
         foreach(var triggerable in triggerables)
-            Gizmos.DrawLine(transform.position, triggerable.transform.position);
+            if( triggerable != null )
+                Gizmos.DrawLine(transform.position, triggerable.transform.position);
     }
 }
