@@ -49,7 +49,17 @@ public class QuaterbackController : MonoBehaviour
         recoverySpeed = speedBump.magnitude / recoveryTime;
     }
 
+    private bool isDown = false;
+    public bool IsDown => isDown;
+
+    public void HitBy(Obstacle obstacle) {
+        isDown = true;
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        GameManager.INSTANCE.Lose();
+    }
+
     private void Update() {
+        if( IsDown ) return;
         GetComponent<Rigidbody2D>().velocity = MovementSpeed;
     }
     

@@ -1,16 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public void Lose() {
-        StartCoroutine(LoadSceneAfterDelay(SceneManager.GetActiveScene().name, 3f));
+    public static GameManager INSTANCE;
+
+    public UnityEvent onWin = default;
+    public UnityEvent onLose = default;
+
+    private void Start() {
+        INSTANCE = this;
     }
 
     public void Win() {
-        StartCoroutine(LoadSceneAfterDelay(SceneManager.GetActiveScene().name, 3f));
+        onWin?.Invoke();
+    }
+
+    public void Lose() {
+        onLose?.Invoke();
+    }
+
+    public void ReloadLevelAfter(float delay) {
+        StartCoroutine(LoadSceneAfterDelay(SceneManager.GetActiveScene().name, delay));
     }
  
     IEnumerator LoadSceneAfterDelay(string sceneName, float delay)

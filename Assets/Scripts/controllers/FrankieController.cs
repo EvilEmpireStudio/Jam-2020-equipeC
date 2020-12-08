@@ -14,7 +14,8 @@ public class FrankieController : MonoBehaviour
     public float speed = 10f;
     [Range(0,1)] public float followStrengh = 0.75f;
 
-    public bool isDown = false;
+    private bool isDown = false;
+    public bool IsDown => isDown;
 
     private void FixedUpdate() {
         if( isDown ) return;
@@ -27,6 +28,11 @@ public class FrankieController : MonoBehaviour
 
         if( Input.GetButtonDown("Defend") )
             DestroyObstacles();
+    }
+    
+    public void HitBy(Obstacle obstacle) {
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        Down();
     }
 
     private void Down() {
@@ -42,7 +48,7 @@ public class FrankieController : MonoBehaviour
             .ConvertAll<Obstacle>( collider => collider.GetComponent<Obstacle>() );
 
         foreach( var obstacle in obstacles ) {
-            obstacle.DestroyObstacle( this ); 
+            obstacle.ParryObstacle( this ); 
         }
     }
 }
