@@ -8,20 +8,11 @@ public class Spawner : MonoBehaviour
     [SerializeField] protected float width = 0f;
     [SerializeField, Range(0, 360)] protected float spawnAngle = 0f;
 
-    // protected float nextThrow = 3f;
-
-    // private void FixedUpdate() {
-    //     if( Time.timeSinceLevelLoad > nextThrow ) {
-    //         SpawnObstacle();
-    //         nextThrow = Time.timeSinceLevelLoad + frequency;
-    //     }
-    // }
-
     public void SpawnObject() {
         if( prefabToSpawn == null ) return;
 
         var spawnPosition = transform.position + transform.rotation * Vector3.right * Random.Range(-width/2, width/2);
-        var instance = Instantiate(prefabToSpawn, spawnPosition, Quaternion.Euler(0, spawnAngle, 0));
+        var instance = Instantiate(prefabToSpawn, spawnPosition, Quaternion.Euler(0, 0, spawnAngle));
         
         Triggerable triggerable;
         if( instance.TryGetComponent<Triggerable>(out triggerable) )
@@ -35,7 +26,7 @@ public class Spawner : MonoBehaviour
         Gizmos.color = new Color(0.9f, 0, 1, 1);
         Gizmos.DrawLine( leftPosition, rightPosition );
 
-        var dirVector = Quaternion.Euler(0, 0, spawnAngle) * Vector3.down;
+        var dirVector = Quaternion.Euler(0, 0, spawnAngle) * Vector3.up;
 
         Gizmos.color = Color.blue;
         Gizmos.DrawLine( leftPosition, leftPosition + dirVector );
