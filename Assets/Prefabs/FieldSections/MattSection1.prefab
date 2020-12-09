@@ -369,7 +369,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Animation
       value: 
-      objectReference: {fileID: 7400000, guid: 39298d1d20792b74c8b753d5cfa7192e, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5915469254986520328, guid: 2873d8f252776d047b461ecad3b14a03,
         type: 3}
       propertyPath: m_Animations.Array.size
@@ -379,12 +379,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Animations.Array.data[0]
       value: 
-      objectReference: {fileID: 7400000, guid: 39298d1d20792b74c8b753d5cfa7192e, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5915469254986520328, guid: 2873d8f252776d047b461ecad3b14a03,
         type: 3}
       propertyPath: m_Animations.Array.data[1]
       value: 
-      objectReference: {fileID: 7400000, guid: 39298d1d20792b74c8b753d5cfa7192e, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6591440683925489479, guid: 2873d8f252776d047b461ecad3b14a03,
         type: 3}
       propertyPath: m_Name
