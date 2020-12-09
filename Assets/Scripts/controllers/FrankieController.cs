@@ -49,9 +49,9 @@ public class FrankieController : MonoBehaviour
 
     private void DestroyObstacles()
     {
-        List<Obstacle> obstacles = defendZone.colliders
-            .FindAll( collider => collider.GetComponent<Obstacle>() != null )
-            .ConvertAll<Obstacle>( collider => collider.GetComponent<Obstacle>() );
+        List<Parryable> obstacles = defendZone.colliders
+            .FindAll( collider => collider.GetComponent<Parryable>() != null )
+            .ConvertAll<Parryable>( collider => collider.GetComponent<Parryable>() );
 
         foreach( var obstacle in obstacles ) {
             obstacle.ParryObstacle( this ); 

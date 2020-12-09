@@ -60,8 +60,11 @@ public class QuaterbackController : MonoBehaviour
     public void RaiseFrankie( int number = 1 ) {
         for (int i = 0; i < number; i++)
         {
+            if( downFrankies.Count <= 0 ) break;
+
             var nextFrankieToRise = downFrankies.Dequeue();
-            if( nextFrankieToRise != null && nextFrankieToRise.IsDown ) {
+            if( nextFrankieToRise != null && nextFrankieToRise.IsDown ) 
+            {
                 nextFrankieToRise.Rise();
             }
         }
