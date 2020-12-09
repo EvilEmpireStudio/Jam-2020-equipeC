@@ -8,14 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: adborderad
-  m_Shader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 8dd6dd2e748616845ac0fb83027e06c4,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2050
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -72,6 +72,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_1D8CEEE8: {r: 0.69803923, g: 0.40784314, b: 0.7372549, a: 0}
+    - Color_EB6DDE34: {r: 0.54509807, g: 0.37254903, b: 0.13333334, a: 0}
     - _BaseColor: {r: 0.54509807, g: 0.37254903, b: 0.13333334, a: 1}
     - _Color: {r: 0.25882354, g: 0.11372549, b: 0.015686275, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
