@@ -14,7 +14,8 @@ public class Trigger : MonoBehaviour
         if( other.TryGetComponent<QuaterbackController>(out quaterback) ){
             triggered = true;
             foreach(var triggerable in triggerables)
-                triggerable.Triggered();
+                if( triggerable != null )
+                    triggerable.Triggered();
         }
     }
 
