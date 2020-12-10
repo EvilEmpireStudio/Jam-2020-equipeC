@@ -5861,6 +5861,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5413515763666527574, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -5413515763666527574, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.005397916
+      objectReference: {fileID: 0}
+    - target: {fileID: -5413515763666527574, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.17574728
+      objectReference: {fileID: 0}
+    - target: {fileID: -5413515763666527574, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 1.2817509
+      objectReference: {fileID: 0}
+    - target: {fileID: -5413515763666527574, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 2.6656306
+      objectReference: {fileID: 0}
+    - target: {fileID: -5413515763666527574, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 1.9496913
+      objectReference: {fileID: 0}
+    - target: {fileID: -5413515763666527574, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 2.9779553
+      objectReference: {fileID: 0}
+    - target: {fileID: -5413515763666527574, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1389791546}
+    - target: {fileID: -2510408828485864485, guid: 95506e1f2273a2d43beaa42b5498d2c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 95506e1f2273a2d43beaa42b5498d2c1,
         type: 3}
       propertyPath: m_Name
@@ -10912,6 +10957,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c337df62ae342498a1ad1a3b01354a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!21 &1389791546
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
+  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &1404372270
 GameObject:
   m_ObjectHideFlags: 0
@@ -26825,13 +26891,13 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -27080,6 +27146,51 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.39603117
       objectReference: {fileID: 0}
+    - target: {fileID: 5175390010305532736, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169389062805484374, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169389062805484374, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.05650741
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169389062805484374, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.00000023841858
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169389062805484374, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169389062805484374, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 4.454026
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169389062805484374, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 5.6651115
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169389062805484374, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 5.897928
+      objectReference: {fileID: 0}
+    - target: {fileID: 9169389062805484374, guid: 1757527c0295b8c4ca2a579734977a82,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1389791546}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1757527c0295b8c4ca2a579734977a82, type: 3}
 --- !u!1001 &3642187829366632349
