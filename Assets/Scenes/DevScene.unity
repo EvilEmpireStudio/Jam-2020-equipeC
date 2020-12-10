@@ -5948,7 +5948,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1527744938}
+      objectReference: {fileID: 1997242621}
     - target: {fileID: -2510408828485864485, guid: 95506e1f2273a2d43beaa42b5498d2c1,
         type: 3}
       propertyPath: m_Layer
@@ -16185,27 +16185,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d0a0b4904d50a84ea3844efcce1022a, type: 3}
---- !u!21 &1527744938
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
-  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors: []
 --- !u!114 &1532373999 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4106073695129241521, guid: 9d16f610add482e478ad8de666e59fc5,
@@ -17040,6 +17019,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d0a0b4904d50a84ea3844efcce1022a, type: 3}
+--- !u!21 &1997242621
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
+  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors: []
 --- !u!1 &2021186532
 GameObject:
   m_ObjectHideFlags: 0
@@ -26995,13 +26995,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138677391}
-  m_LocalRotation: {x: 0.13374923, y: 0.4586977, z: -0.87725854, w: 0.046098262}
+  m_LocalRotation: {x: 0.022081617, y: 0.21524704, z: -0.9760255, w: 0.023565313}
   m_LocalPosition: {x: -0.83, y: 4.39, z: 5.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 54.798004, y: 340.505, z: 175.84001}
+  m_LocalEulerAnglesHint: {x: 155.089, y: 537.917, z: 362.30597}
 --- !u!1 &2139641458
 GameObject:
   m_ObjectHideFlags: 0
@@ -27238,7 +27238,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1527744938}
+      objectReference: {fileID: 1997242621}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1757527c0295b8c4ca2a579734977a82, type: 3}
 --- !u!1001 &3642187829366632349
