@@ -6,7 +6,62 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #920
+    second: {fileID: 2100000, guid: 38831d262aa2a85478c8e77122effe02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coach color 1 dark
+    second: {fileID: 2100000, guid: 27dea335c7e002a418f9854f0653b359, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coach hair
+    second: {fileID: 2100000, guid: a1bff8ddcf056064586862a35fcebd63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coach hair 2
+    second: {fileID: 2100000, guid: a1ef8edec27873e459235b96e7c4a938, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coach metal
+    second: {fileID: 2100000, guid: ec6d6f1006b317341983011f04a9cfc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coach skin
+    second: {fileID: 2100000, guid: 2503eaca2d3de094886ade3cf6ffa577, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coach survet second color
+    second: {fileID: 2100000, guid: 1e44a7161f881ca4ab840f53f844b7d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: coachsurvetmaincolor
+    second: {fileID: 2100000, guid: 326b8245526d2374599f11152e5265b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shouter plastic
+    second: {fileID: 2100000, guid: e16238b492aae0747a740f0f44360b60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shouter plastic 2
+    second: {fileID: 2100000, guid: 08f630d0c52233f4c96cb1632639c06b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shouter shade
+    second: {fileID: 2100000, guid: a15f72c2adac7844f9893e701dd628cf, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
