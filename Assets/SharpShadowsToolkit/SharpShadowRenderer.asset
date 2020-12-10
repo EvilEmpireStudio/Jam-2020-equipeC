@@ -56,6 +56,7 @@ MonoBehaviour:
       layerIndex: 1
     nearExtrusionDistance: 0.002
     farExtrusionDistance: 100
-    shadowIntensity: 0.5
+    shadowIntensity: 0.624
+    shadowColor: {r: 1, g: 0, b: 0.9227276, a: 1}
     shadeMode: 1
     mitigateSelfShadowArtifacts: 1
