@@ -41,6 +41,7 @@ Shader "SharpShadowsToolkit/VisualizeShadowsFullscreen"
 #endif
 
             half _SST_ShadowIntensity;
+            float4 _SST_ShadowColor;
 
             struct Attributes
             {
@@ -63,7 +64,7 @@ Shader "SharpShadowsToolkit/VisualizeShadowsFullscreen"
 
             half4 VisualizeShadowFragment(Varyings input) : SV_Target
             {
-                return half4(0.0, 0.0, 0.0, _SST_ShadowIntensity);
+                return half4(_SST_ShadowColor.rgb, _SST_ShadowIntensity);
             }
             ENDHLSL
         }

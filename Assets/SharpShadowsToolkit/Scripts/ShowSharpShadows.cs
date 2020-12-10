@@ -35,6 +35,8 @@ namespace SharpShadowsToolkit
             [Range(0.0f, 1.0f)]
             [Tooltip(Docs.Tooltip.ShadowIntensity)]
             public float shadowIntensity = 1.0f;
+            
+            public Color shadowColor = Color.black;
 
             [Tooltip(Docs.Tooltip.ShadeMode)]
             public ShadeMode shadeMode = ShadeMode.InjectIntoScreenSpaceShadowResolveTexture;
@@ -72,6 +74,7 @@ namespace SharpShadowsToolkit
             var farDist = settings.mitigateSelfShadowArtifacts ? settings.nearExtrusionDistance : settings.farExtrusionDistance;
 
             Shader.SetGlobalFloat("_SST_ShadowIntensity", settings.shadowIntensity);
+            Shader.SetGlobalColor("_SST_ShadowColor", settings.shadowColor);
             Shader.SetGlobalFloat("_SST_NearExtrusionDistance", nearDist);
             Shader.SetGlobalFloat("_SST_FarExtrusionDistance", farDist);
 
