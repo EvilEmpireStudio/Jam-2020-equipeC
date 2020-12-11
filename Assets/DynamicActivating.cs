@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class DynamicActivating : MonoBehaviour
 {
@@ -13,7 +14,11 @@ public class DynamicActivating : MonoBehaviour
         {
             var child = transform.GetChild(i);
 
-            if( child.position.y < quaterbackController.transform.position.y - deactivatingDistance ) {
+            var preventCulling = 
+                !child.gameObject.activeInHierarchy || 
+                child.GetComponentsInChildren<PreventCulling>().Any<PreventCulling>( p => p.ShouldPreventCulling(quaterbackController) );
+
+            if( !preventCulling && child.position.y < quaterbackController.transform.position.y - deactivatingDistance ) {
                 child.gameObject.SetActive(false);
                 Destroy(child.gameObject);
             }
