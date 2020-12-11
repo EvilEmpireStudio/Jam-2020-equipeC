@@ -5,14 +5,15 @@ public class CameraController : MonoBehaviour
     [SerializeField] protected QuaterbackController targetPlayer;
     [SerializeField, Range(0, 5)] protected float followStrength = 0.8f;
     [SerializeField] public float offsetY = 0.5f;
+    [SerializeField] public bool follow = true;
 
-    private bool follow = false;
     // Update is called once per frame
     void Update()
     {
-        if( !follow ) return;
+        var targetY = targetPlayer.transform.position.y + offsetY;
+        if( !follow || transform.position.y > targetY ) return;
         
-        var newY =  Mathf.Lerp(transform.position.y, targetPlayer.transform.position.y + offsetY, followStrength * Time.deltaTime);
+        var newY =  Mathf.Lerp(transform.position.y, targetY, followStrength * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
 

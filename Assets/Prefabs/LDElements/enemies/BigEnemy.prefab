@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 9198512331016731878}
   - component: {fileID: 5387362514282923101}
   - component: {fileID: 1009498578645914353}
-  - component: {fileID: -2960660127255646829}
   m_Layer: 0
   m_Name: BigEnemy
   m_TagString: Untagged
@@ -90,18 +89,6 @@ MonoBehaviour:
   OnHitFrankie:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-2960660127255646829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7178607399897884736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bc81295c5fe508488134d28ecf0b363, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &237571067253033121
 PrefabInstance:
   m_ObjectHideFlags: 0
