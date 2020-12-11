@@ -265,7 +265,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -379,7 +379,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -539,7 +539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -648,7 +648,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -1044,10 +1044,10 @@ RectTransform:
   m_Father: {fileID: 195891622}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88.350006, y: -8.662499}
-  m_SizeDelta: {x: 176.70001, y: 17.324999}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161565650
 MonoBehaviour:
@@ -1325,10 +1325,10 @@ RectTransform:
   m_Father: {fileID: 195891622}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88.350006, y: -63.312496}
-  m_SizeDelta: {x: 176.70001, y: 17.324999}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &193380640
 MonoBehaviour:
@@ -1603,7 +1603,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -1890,7 +1890,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -2231,6 +2231,9 @@ MonoBehaviour:
   - position: {x: -17.629244, y: -1.6109967, z: 24.451626}
     tangent: {x: 1.9297667, y: 3.6064687, z: -2.908989}
     roll: 0
+  - position: {x: -1.3044711, y: 1.204029, z: -1.7715005}
+    tangent: {x: 1.6711032, y: 0.016267896, z: -1.024742}
+    roll: 0
   - position: {x: 0, y: 0, z: 0}
     tangent: {x: 0.030755138, y: 0.032299347, z: 0.9289914}
     roll: 0
@@ -2350,7 +2353,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -2392,10 +2395,10 @@ RectTransform:
   m_Father: {fileID: 195891622}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88.350006, y: -35.9875}
-  m_SizeDelta: {x: 176.70001, y: 17.324999}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341585852
 MonoBehaviour:
@@ -3716,7 +3719,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -3914,7 +3917,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -4298,7 +4301,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -5240,6 +5243,15 @@ MonoBehaviour:
   - position: {x: 0, y: 0, z: 0}
     tangent: {x: 0.030755138, y: 0.032299347, z: 0.9289914}
     roll: 0
+  - position: {x: -1.7895976, y: -0.9211167, z: 3.4840322}
+    tangent: {x: -0.40029085, y: -0.10873711, z: 0.81084013}
+    roll: 0
+  - position: {x: -2.691467, y: -1.2696695, z: 5.515732}
+    tangent: {x: -0.6727667, y: -0.17436206, z: 1.6262732}
+    roll: 0
+  - position: {x: -10.251608, y: -2.3077805, z: 17.551153}
+    tangent: {x: -3.2248802, y: -0.4676869, z: 4.468628}
+    roll: 0
   - position: {x: -17.629244, y: -1.6109967, z: 24.451626}
     tangent: {x: 1.9297667, y: 3.6064687, z: -2.908989}
     roll: 0
@@ -6021,7 +6033,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -6135,7 +6147,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -6995,7 +7007,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -7003,27 +7015,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43a5ed5569d18a14882ab0905664ab53, type: 3}
---- !u!21 &1247474097
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
-  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors: []
 --- !u!4 &1267784670 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34fefed3ca72ba24e8d737724fb510b1,
@@ -8021,7 +8012,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 19867cb2969a62041af5d231f5c1e4e0,
         type: 3}
       propertyPath: m_Layer
@@ -8314,7 +8305,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 37.95
+  m_fontSize: 22.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8970,8 +8961,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670409359}
-  m_LocalRotation: {x: -0.072616495, y: 0.11991037, z: 0.005167828, w: 0.99011195}
-  m_LocalPosition: {x: -19.531586, y: -2.4953918, z: -13.757408}
+  m_LocalRotation: {x: -0.09418396, y: 0.9200877, z: 0.3377947, w: 0.17453611}
+  m_LocalPosition: {x: -32.269775, y: -1.5454636, z: 13.645416}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 777134067}
@@ -9020,11 +9011,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a9c787e5d1bbf48a389834c4a9641c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Path: {fileID: 1737070671}
+  m_Path: {fileID: 979786621}
   m_UpdateMethod: 0
   m_PositionUnits: 2
   m_Speed: 0
-  m_Position: 0
+  m_Position: 1
 --- !u!1 &1670791575
 GameObject:
   m_ObjectHideFlags: 0
@@ -9305,7 +9296,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -9824,6 +9815,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34fefed3ca72ba24e8d737724fb510b1, type: 3}
+--- !u!21 &1876311812
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
+  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors: []
 --- !u!4 &1880124554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34fefed3ca72ba24e8d737724fb510b1,
@@ -10360,10 +10372,10 @@ RectTransform:
   m_Father: {fileID: 195891622}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 88.350006, y: -90.6375}
-  m_SizeDelta: {x: 176.70001, y: 17.324999}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000470611
 MonoBehaviour:
@@ -10686,7 +10698,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -11354,7 +11366,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1247474097}
+      objectReference: {fileID: 1876311812}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer

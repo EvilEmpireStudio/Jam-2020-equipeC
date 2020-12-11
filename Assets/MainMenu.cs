@@ -72,8 +72,9 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Quit() {
-        currentState = MenuState.Starting;
-        // cameraDollyCart.m_Path = mainToQuit;
+        currentState = MenuState.Exiting;
+        cameraDollyCart.m_Position = 0;
+        cameraDollyCart.m_Path = mainToStart;
         // AnimationDoneCallback();
         animator.Play("gotoQuit");
     }
