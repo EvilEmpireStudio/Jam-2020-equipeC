@@ -265,7 +265,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -379,7 +379,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -539,7 +539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -648,7 +648,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -1525,7 +1525,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -1812,7 +1812,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -2058,7 +2058,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -3350,7 +3350,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -3548,7 +3548,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -3930,7 +3930,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -4342,27 +4342,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1194085447}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &857132168
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
-  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors: []
 --- !u!4 &878672149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34fefed3ca72ba24e8d737724fb510b1,
@@ -5562,7 +5541,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -5676,7 +5655,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -5764,6 +5743,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 958826508}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1159024757
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
+  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors: []
 --- !u!1001 &1177001150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6405,7 +6405,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -6949,7 +6949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CREDITS
+  m_text: 'QUIT
 
 '
   m_isRightToLeft: 0
@@ -7020,7 +7020,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1453339727}
-    characterCount: 8
+    characterCount: 5
     spriteCount: 0
     spaceCount: 1
     wordCount: 1
@@ -7410,7 +7410,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 19867cb2969a62041af5d231f5c1e4e0,
         type: 3}
       propertyPath: m_Layer
@@ -8453,11 +8453,11 @@ MonoBehaviour:
   - position: {x: 0, y: 0, z: 0}
     tangent: {x: 0.030755138, y: 0.032299347, z: 0.9289914}
     roll: 0
-  - position: {x: 6.4173813, y: -1.1407505, z: 11.234649}
-    tangent: {x: 5.2406435, y: -0.22849035, z: 5.2318583}
+  - position: {x: 9.846463, y: -1.3548919, z: 13.363858}
+    tangent: {x: 7.89075, y: -0.0724529, z: 2.3841753}
     roll: 0
-  - position: {x: 21.595478, y: -0.8297239, z: 19.46163}
-    tangent: {x: 6.189766, y: -0.31520504, z: 4.855976}
+  - position: {x: 22.170155, y: -1.2888613, z: 19.454088}
+    tangent: {x: 2.0652962, y: 0.2474494, z: 3.309517}
     roll: 0
   - position: {x: 18.858957, y: 4.86062, z: 36.08238}
     tangent: {x: -0.89531136, y: 5.1420913, z: 1.9635658}
@@ -8688,7 +8688,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -9876,7 +9876,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -10544,7 +10544,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 857132168}
+      objectReference: {fileID: 1159024757}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
