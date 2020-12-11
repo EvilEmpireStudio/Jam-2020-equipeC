@@ -15,10 +15,11 @@ public class Runner : MonoBehaviour
 
     public void SetRunning(bool value) {
         isRunning = value;
-        if( value )
-            animator.Play("run");
-        else
-            animator.Play("block");
+        animator.SetBool("running", value);
+        // if( value )
+        //     animator.Play("run");
+        // else
+        //     animator.Play("block");
     }
 
     // Update is called once per frame

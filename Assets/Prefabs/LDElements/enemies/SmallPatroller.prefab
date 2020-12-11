@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolTarget: {fileID: 0}
+  animator: {fileID: 6898677370426491358}
 --- !u!1001 &4450088326000869914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20,10 +21,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 621015797092954661, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2723332082413793672, guid: 8a458cfb68780184da2132610fe03052,
         type: 3}
       propertyPath: m_Name
-      value: SmallEnemy
+      value: SmallPatroller
       objectReference: {fileID: 0}
     - target: {fileID: 2723332082413793673, guid: 8a458cfb68780184da2132610fe03052,
         type: 3}
@@ -90,6 +96,12 @@ PrefabInstance:
 --- !u!1 &1732438731259376530 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2723332082413793672, guid: 8a458cfb68780184da2132610fe03052,
+    type: 3}
+  m_PrefabInstance: {fileID: 4450088326000869914}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6898677370426491358 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7096799200669139908, guid: 8a458cfb68780184da2132610fe03052,
     type: 3}
   m_PrefabInstance: {fileID: 4450088326000869914}
   m_PrefabAsset: {fileID: 0}

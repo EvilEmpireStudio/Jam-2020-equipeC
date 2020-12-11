@@ -19,10 +19,7 @@ public class Seeker : MonoBehaviour
 
     public void SetRunning(bool value) {
         isRunning = value;
-        if( value )
-            animator.Play("run");
-        else
-            animator.Play("block");
+        animator.SetBool("running", value);
     }
 
     // Update is called once per frame
