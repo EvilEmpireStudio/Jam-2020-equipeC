@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
     public CinemachinePath tutoToMain;
 
     public CinemachinePath mainToStart;
-    public CinemachinePath mainToQuit;
+    // public CinemachinePath mainToQuit;
 
     public CinemachineDollyCart cameraDollyCart;
 
@@ -33,12 +33,6 @@ public class MainMenu : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void StartGame() {
-        currentState = MenuState.Starting;
-        AnimationDoneCallback();
-        // animator.Play("gotoStart");
-    }
-
     public void GotoCredits() {
         currentState = MenuState.Credits;
         cameraDollyCart.m_Path = mainToCredits;
@@ -47,6 +41,7 @@ public class MainMenu : MonoBehaviour
 
     public void GotoTuto() {
         currentState = MenuState.Tutorial;
+        cameraDollyCart.m_Path = mainToTuto;
         animator.Play("gotoTuto");
     }
 
@@ -69,10 +64,18 @@ public class MainMenu : MonoBehaviour
         currentState = MenuState.MainMenu;
     }
 
+    public void StartGame() {
+        currentState = MenuState.Starting;
+        cameraDollyCart.m_Path = mainToStart;
+        // AnimationDoneCallback();
+        animator.Play("gotoStart");
+    }
+
     public void Quit() {
         currentState = MenuState.Starting;
-        AnimationDoneCallback();
-        // animator.Play("gotoQuit");
+        // cameraDollyCart.m_Path = mainToQuit;
+        // AnimationDoneCallback();
+        animator.Play("gotoQuit");
     }
 
     public void AnimationDoneCallback() {

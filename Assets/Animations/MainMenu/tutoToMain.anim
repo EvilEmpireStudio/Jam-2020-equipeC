@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: creditsToMain
+  m_Name: tutoToMain
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -59,7 +59,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -70,7 +70,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Canvas/Credits
+    path: Canvas/Main Menu
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -87,7 +87,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 1
-        value: 1
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -98,7 +98,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Canvas/Main Menu
+    path: Canvas/Tutorial
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -117,14 +117,14 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 745101480
+      path: 83944626
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 83944626
+      path: 2847340161
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -194,7 +194,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 1
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -205,7 +205,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Canvas/Credits
+    path: Canvas/Main Menu
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -222,7 +222,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 1
-        value: 1
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -233,7 +233,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Canvas/Main Menu
+    path: Canvas/Tutorial
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []
