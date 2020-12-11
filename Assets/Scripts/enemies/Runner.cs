@@ -7,6 +7,7 @@ public class Runner : MonoBehaviour
     [SerializeField, Min(1)] protected float maxRunningSpeed = 5f;
     [SerializeField, Min(0)] protected float accelerationTime = 0.5f;
     [SerializeField] protected bool isRunning = false;
+    [SerializeField] protected Animator animator = default;
 
     protected float Acceleration => maxRunningSpeed / accelerationTime;
 
@@ -14,6 +15,10 @@ public class Runner : MonoBehaviour
 
     public void SetRunning(bool value) {
         isRunning = value;
+        if( value )
+            animator.Play("run");
+        else
+            animator.Play("block");
     }
 
     // Update is called once per frame

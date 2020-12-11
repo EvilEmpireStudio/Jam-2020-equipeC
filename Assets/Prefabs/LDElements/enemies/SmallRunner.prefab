@@ -41,6 +41,7 @@ MonoBehaviour:
   maxRunningSpeed: 5
   accelerationTime: 0.5
   isRunning: 0
+  animator: {fileID: 2703409205231235072}
 --- !u!1001 &5186058920933536708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48,6 +49,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 621015797092954661, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2723332082413793672, guid: 8a458cfb68780184da2132610fe03052,
         type: 3}
       propertyPath: m_Name
@@ -121,7 +127,7 @@ PrefabInstance:
     - target: {fileID: 4308722147535163236, guid: 8a458cfb68780184da2132610fe03052,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4308722147535163236, guid: 8a458cfb68780184da2132610fe03052,
         type: 3}
@@ -143,6 +149,12 @@ PrefabInstance:
 --- !u!1 &7076189677451985484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2723332082413793672, guid: 8a458cfb68780184da2132610fe03052,
+    type: 3}
+  m_PrefabInstance: {fileID: 5186058920933536708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2703409205231235072 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7096799200669139908, guid: 8a458cfb68780184da2132610fe03052,
     type: 3}
   m_PrefabInstance: {fileID: 5186058920933536708}
   m_PrefabAsset: {fileID: 0}

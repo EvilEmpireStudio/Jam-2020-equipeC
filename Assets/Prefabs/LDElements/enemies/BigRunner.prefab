@@ -41,6 +41,7 @@ MonoBehaviour:
   maxRunningSpeed: 3
   accelerationTime: 0
   isRunning: 0
+  animator: {fileID: 6501645236232882049}
 --- !u!1001 &5972980725914260498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48,6 +49,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 320248073544487531, guid: 9766339ee5af78941b24e6527f8f6754,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4235661399204612083, guid: 9766339ee5af78941b24e6527f8f6754,
         type: 3}
       propertyPath: m_RootOrder
@@ -118,6 +124,12 @@ PrefabInstance:
 --- !u!1 &3565658173244750930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7178607399897884736, guid: 9766339ee5af78941b24e6527f8f6754,
+    type: 3}
+  m_PrefabInstance: {fileID: 5972980725914260498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6501645236232882049 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 639002862857900947, guid: 9766339ee5af78941b24e6527f8f6754,
     type: 3}
   m_PrefabInstance: {fileID: 5972980725914260498}
   m_PrefabAsset: {fileID: 0}

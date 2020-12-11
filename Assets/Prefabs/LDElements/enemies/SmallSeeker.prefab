@@ -42,6 +42,8 @@ MonoBehaviour:
   accelerationTime: 0.5
   rotationTime: 1.5
   isRunning: 0
+  animator: {fileID: 8949670490627969244}
+  debug: {fileID: 0}
 --- !u!1001 &2184096977527247640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49,10 +51,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 621015797092954661, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2723332082413793672, guid: 8a458cfb68780184da2132610fe03052,
         type: 3}
       propertyPath: m_Name
-      value: SmallSeeker Variant
+      value: SmallSeeker
       objectReference: {fileID: 0}
     - target: {fileID: 2723332082413793673, guid: 8a458cfb68780184da2132610fe03052,
         type: 3}
@@ -119,6 +126,12 @@ PrefabInstance:
 --- !u!1 &4288623907221987984 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2723332082413793672, guid: 8a458cfb68780184da2132610fe03052,
+    type: 3}
+  m_PrefabInstance: {fileID: 2184096977527247640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8949670490627969244 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7096799200669139908, guid: 8a458cfb68780184da2132610fe03052,
     type: 3}
   m_PrefabInstance: {fileID: 2184096977527247640}
   m_PrefabAsset: {fileID: 0}

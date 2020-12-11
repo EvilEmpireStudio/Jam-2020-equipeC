@@ -16,6 +16,8 @@ MonoBehaviour:
   accelerationTime: 0.5
   rotationTime: 4
   isRunning: 0
+  animator: {fileID: 6332645673429833060}
+  debug: {fileID: 0}
 --- !u!114 &592205220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,6 +51,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 320248073544487531, guid: 9766339ee5af78941b24e6527f8f6754,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4235661399204612083, guid: 9766339ee5af78941b24e6527f8f6754,
         type: 3}
       propertyPath: m_RootOrder
@@ -107,13 +114,19 @@ PrefabInstance:
     - target: {fileID: 7178607399897884736, guid: 9766339ee5af78941b24e6527f8f6754,
         type: 3}
       propertyPath: m_Name
-      value: BigEnemy
+      value: BigSeeker
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9766339ee5af78941b24e6527f8f6754, type: 3}
 --- !u!1 &4369524503069208247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7178607399897884736, guid: 9766339ee5af78941b24e6527f8f6754,
+    type: 3}
+  m_PrefabInstance: {fileID: 6862397349795809015}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6332645673429833060 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 639002862857900947, guid: 9766339ee5af78941b24e6527f8f6754,
     type: 3}
   m_PrefabInstance: {fileID: 6862397349795809015}
   m_PrefabAsset: {fileID: 0}
