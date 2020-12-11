@@ -23,6 +23,6 @@ public class CoachController : MonoBehaviour
 
         coachAnimator.SetInteger("direction", direction);
             
-        transform.rotation *= Quaternion.Euler(0, 0, rotationSpeed * direction * Time.deltaTime);
+        transform.rotation *= Quaternion.Euler(0, 0, -rotationSpeed * direction * Time.deltaTime);
     }
 }
