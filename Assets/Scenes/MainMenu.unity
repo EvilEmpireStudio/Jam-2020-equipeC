@@ -265,7 +265,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -379,7 +379,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -539,7 +539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -648,7 +648,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -1603,7 +1603,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -1890,7 +1890,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -2353,7 +2353,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -2799,7 +2799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.07805049, g: 0, b: 0.24528301, a: 0}
+  m_Color: {r: 0.031921808, g: 0, b: 0.16981131, a: 0}
   m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3719,7 +3719,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -3917,7 +3917,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -4301,7 +4301,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -6033,7 +6033,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -6147,7 +6147,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -7007,7 +7007,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -7185,6 +7185,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34fefed3ca72ba24e8d737724fb510b1, type: 3}
+--- !u!21 &1354905015
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
+  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors: []
 --- !u!4 &1357842810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34fefed3ca72ba24e8d737724fb510b1,
@@ -8012,7 +8033,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 19867cb2969a62041af5d231f5c1e4e0,
         type: 3}
       propertyPath: m_Layer
@@ -8961,8 +8982,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670409359}
-  m_LocalRotation: {x: -0.09418396, y: 0.9200877, z: 0.3377947, w: 0.17453611}
-  m_LocalPosition: {x: -32.269775, y: -1.5454636, z: 13.645416}
+  m_LocalRotation: {x: -0.068613194, y: 0.10994359, z: 0.005027721, w: 0.991554}
+  m_LocalPosition: {x: -19.518036, y: -2.4869766, z: -13.700042}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 777134067}
@@ -9015,7 +9036,7 @@ MonoBehaviour:
   m_UpdateMethod: 0
   m_PositionUnits: 2
   m_Speed: 0
-  m_Position: 1
+  m_Position: 0
 --- !u!1 &1670791575
 GameObject:
   m_ObjectHideFlags: 0
@@ -9296,7 +9317,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: 919132149155446097, guid: 43a5ed5569d18a14882ab0905664ab53,
         type: 3}
       propertyPath: m_Name
@@ -9815,27 +9836,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34fefed3ca72ba24e8d737724fb510b1, type: 3}
---- !u!21 &1876311812
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
-  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors: []
 --- !u!4 &1880124554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34fefed3ca72ba24e8d737724fb510b1,
@@ -10698,7 +10698,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
@@ -11366,7 +11366,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1876311812}
+      objectReference: {fileID: 1354905015}
     - target: {fileID: -2510408828485864485, guid: 1c4a2f88e86c21741a1a0aab7414bde4,
         type: 3}
       propertyPath: m_Layer
