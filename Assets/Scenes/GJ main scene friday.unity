@@ -23299,28 +23299,6 @@ Transform:
   - {fileID: 495984762}
   - {fileID: 40144396}
   - {fileID: 1741784352}
-  - {fileID: 775862512}
-  - {fileID: 1825631997}
-  - {fileID: 381467690}
-  - {fileID: 1193314493}
-  - {fileID: 1983328187}
-  - {fileID: 908903849}
-  - {fileID: 387879288}
-  - {fileID: 1432813632}
-  - {fileID: 1029622932}
-  - {fileID: 1169124937}
-  - {fileID: 1492319119}
-  - {fileID: 799178391}
-  - {fileID: 909955376}
-  - {fileID: 740255789}
-  - {fileID: 1351228216}
-  - {fileID: 1490292965}
-  - {fileID: 641823994}
-  - {fileID: 1078028043}
-  - {fileID: 406923839}
-  - {fileID: 510499063}
-  - {fileID: 80047774}
-  - {fileID: 2066833695}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42296,24 +42274,3 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!21 &1001777159
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: SharpShadowsToolkit/VolumeUpdateStencilOnDepthPass
-  m_Shader: {fileID: 4800000, guid: a620a4c50bbf7f244b9a3fc667df402e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats: []
-    m_Colors: []
