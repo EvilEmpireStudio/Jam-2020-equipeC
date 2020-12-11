@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 8616979580095358346}
   - component: {fileID: 8616979580095358358}
   - component: {fileID: 8616979580095358359}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BeerCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
