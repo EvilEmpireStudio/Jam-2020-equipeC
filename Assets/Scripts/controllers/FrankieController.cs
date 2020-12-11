@@ -12,6 +12,11 @@ public class FrankieController : MonoBehaviour
     public ParticleSystem downParticles = default;
     public Animator animator = default;
 
+    public AudioSource gruntSource = default;
+    public AudioSource kickSource = default;
+    public AudioSource deathSource = default;
+
+
     public float speed = 10f;
     [Range(0,1)] public float followStrengh = 0.75f;
 
@@ -40,6 +45,7 @@ public class FrankieController : MonoBehaviour
 
     private void Down() {
         animator.Play("death");
+        deathSource.Play();
 
         isDown = true;
         if( downParticles != null )
@@ -56,13 +62,19 @@ public class FrankieController : MonoBehaviour
     private void DestroyObstacles()
     {
         animator.Play("kick");
+        gruntSource.Play();
 
         List<Parryable> obstacles = defendZone.colliders
             .FindAll( collider => collider.GetComponent<Parryable>() != null )
             .ConvertAll<Parryable>( collider => collider.GetComponent<Parryable>() );
 
+        var any = false;
         foreach( var obstacle in obstacles ) {
             obstacle.ParryObstacle( this ); 
+            any = true;
         }
+
+        if( any )
+            kickSource.Play();
     }
 }

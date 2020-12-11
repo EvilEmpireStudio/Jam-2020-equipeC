@@ -42,6 +42,8 @@ MonoBehaviour:
   accelerationTime: 0
   isRunning: 0
   animator: {fileID: 6501645236232882049}
+  startRunSource: {fileID: 8793005765554100950}
+  runSource: {fileID: 0}
 --- !u!1001 &5972980725914260498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +132,12 @@ GameObject:
 --- !u!95 &6501645236232882049 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 639002862857900947, guid: 9766339ee5af78941b24e6527f8f6754,
+    type: 3}
+  m_PrefabInstance: {fileID: 5972980725914260498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8793005765554100950 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2946271677170814660, guid: 9766339ee5af78941b24e6527f8f6754,
     type: 3}
   m_PrefabInstance: {fileID: 5972980725914260498}
   m_PrefabAsset: {fileID: 0}

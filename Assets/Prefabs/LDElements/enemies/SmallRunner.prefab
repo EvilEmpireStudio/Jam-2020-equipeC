@@ -42,6 +42,8 @@ MonoBehaviour:
   accelerationTime: 0.5
   isRunning: 0
   animator: {fileID: 2703409205231235072}
+  startRunSource: {fileID: 1237591209454189488}
+  runSource: {fileID: 0}
 --- !u!1001 &5186058920933536708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -114,6 +116,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2723332082413793714, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: OnParried.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723332082413793714, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: OnParried.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723332082413793714, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: OnParried.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1290625981804006318}
+    - target: {fileID: 2723332082413793714, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: OnParried.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723332082413793714, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: OnParried.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723332082413793714, guid: 8a458cfb68780184da2132610fe03052,
+        type: 3}
+      propertyPath: OnParried.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2723332082883979978, guid: 8a458cfb68780184da2132610fe03052,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -155,6 +187,18 @@ GameObject:
 --- !u!95 &2703409205231235072 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7096799200669139908, guid: 8a458cfb68780184da2132610fe03052,
+    type: 3}
+  m_PrefabInstance: {fileID: 5186058920933536708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1237591209454189488 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6256726634445178996, guid: 8a458cfb68780184da2132610fe03052,
+    type: 3}
+  m_PrefabInstance: {fileID: 5186058920933536708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1290625981804006318 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6201927701342484586, guid: 8a458cfb68780184da2132610fe03052,
     type: 3}
   m_PrefabInstance: {fileID: 5186058920933536708}
   m_PrefabAsset: {fileID: 0}

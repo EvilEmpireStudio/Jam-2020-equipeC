@@ -9,6 +9,8 @@ public class Runner : MonoBehaviour
     [SerializeField] protected bool isRunning = false;
     [SerializeField] protected Animator animator = default;
 
+    public AudioSource startRunSource = default;
+
     protected float Acceleration => maxRunningSpeed / accelerationTime;
 
     protected float currentSpeed = 0;
@@ -16,6 +18,9 @@ public class Runner : MonoBehaviour
     public void SetRunning(bool value) {
         isRunning = value;
         animator.SetBool("running", value);
+        if( value ) {
+            startRunSource.Play();
+        }
         // if( value )
         //     animator.Play("run");
         // else

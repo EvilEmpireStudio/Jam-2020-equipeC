@@ -9,6 +9,7 @@ public class Seeker : MonoBehaviour
     protected float rotationTime = 0.5f;
     [SerializeField] protected bool isRunning = false;
     [SerializeField] protected Animator animator = default;
+    public AudioSource startRunSource = default;
 
     public QuaterbackController debug;
 
@@ -20,6 +21,9 @@ public class Seeker : MonoBehaviour
     public void SetRunning(bool value) {
         isRunning = value;
         animator.SetBool("running", value);
+        if( value ) {
+            startRunSource.Play();
+        }
     }
 
     // Update is called once per frame

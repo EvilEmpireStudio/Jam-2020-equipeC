@@ -11,6 +11,7 @@ public class CoachController : MonoBehaviour
 
     private int direction = 0;
     
+    private int lastDir = 0;
     private void Update() {
         transform.position = quaterback.transform.position;
         
@@ -22,6 +23,12 @@ public class CoachController : MonoBehaviour
         if( Input.GetButtonUp("RotateRight") ) direction --;
 
         coachAnimator.SetInteger("direction", direction);
+
+        if( direction != 0 && lastDir != direction ) {
+            GetComponent<AudioSource>().pitch = 1 + direction * 0.25f;
+            GetComponent<AudioSource>().Play();
+        }
+        lastDir = direction;
             
         transform.rotation *= Quaternion.Euler(0, 0, -rotationSpeed * direction * Time.deltaTime);
     }
