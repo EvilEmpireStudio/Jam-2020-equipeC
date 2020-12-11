@@ -15,7 +15,7 @@ public class Obstacle : MonoBehaviour
 
         FrankieController frankie;
         if( other.gameObject.TryGetComponent<FrankieController>(out frankie) ) {
-            frankie.HitBy( this );
+            frankie.HitBy();
             OnHitFrankie?.Invoke();
         }
     }

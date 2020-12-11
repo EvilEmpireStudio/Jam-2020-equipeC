@@ -21,7 +21,9 @@ public class FrankieController : MonoBehaviour
     private void FixedUpdate() {
         if( isDown ) return;
 
-        GetComponent<Rigidbody2D>().velocity = (targetSpot.transform.position - transform.position) * speed + quaterback.MovementSpeed * followStrengh;
+        var velocity = (targetSpot.transform.position - transform.position) * speed + quaterback.MovementSpeed * followStrengh;
+        GetComponent<Rigidbody2D>().velocity = velocity;
+        GetComponent<Rigidbody2D>().SetRotation( Vector2.SignedAngle(Vector2.up, velocity) );
     }
 
     private void Update() {
@@ -31,7 +33,7 @@ public class FrankieController : MonoBehaviour
             DestroyObstacles();
     }
     
-    public void HitBy(Obstacle obstacle) {
+    public void HitBy() {
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         Down();
     }
