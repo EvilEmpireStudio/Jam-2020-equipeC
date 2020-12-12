@@ -6,6 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static int levelToLoad = 2;
+
+    public int currentLevelIndex = 0;
+
+    public static void LoadLevel( int indexLevel ) {
+        levelToLoad = indexLevel;
+        SceneManager.LoadScene(1); // 1 is loading screen
+    }
+
     public static GameManager INSTANCE;
 
     [SerializeField] protected QuaterbackController playerQuaterback = default;
@@ -27,12 +36,16 @@ public class GameManager : MonoBehaviour
     }
 
     public void ReloadLevelAfter(float delay) {
-        StartCoroutine(LoadSceneAfterDelay(SceneManager.GetActiveScene().name, delay));
+        StartCoroutine(LoadLevelAfterDelay(currentLevelIndex, delay));
+    }
+    
+    public void LoadMenuAfter(float delay) {
+        StartCoroutine(LoadLevelAfterDelay(0, delay));
     }
  
-    IEnumerator LoadSceneAfterDelay(string sceneName, float delay)
+    IEnumerator LoadLevelAfterDelay(int index, float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(sceneName);
+        LoadLevel(index);
     }
 }

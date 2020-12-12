@@ -82,7 +82,7 @@ public class MainMenu : MonoBehaviour
     public void AnimationDoneCallback() {
         switch(currentState) {
             case MenuState.Starting:
-                SceneManager.LoadScene(1);
+                GameManager.LoadLevel(2);
                 break;
             case MenuState.Exiting:
                 Application.Quit();

@@ -7,6 +7,7 @@ public class CoachController : MonoBehaviour
     public QuaterbackController quaterback;
     public Animator coachAnimator;
     public float rotationSpeed = 90f;
+    [Range(0,1)] public float pitchModulation = 0.1f;
     protected Quaternion targetRotation = Quaternion.identity;
 
     private int direction = 0;
@@ -25,9 +26,11 @@ public class CoachController : MonoBehaviour
         coachAnimator.SetInteger("direction", direction);
 
         if( direction != 0 && lastDir != direction ) {
-            GetComponent<AudioSource>().pitch = 1 + direction * 0.25f;
+            GetComponent<AudioSource>().pitch = 1 + direction * pitchModulation;
             GetComponent<AudioSource>().Play();
-        }
+        } 
+        else if( direction == 0 )
+            GetComponent<AudioSource>().Stop();
         lastDir = direction;
             
         transform.rotation *= Quaternion.Euler(0, 0, -rotationSpeed * direction * Time.deltaTime);

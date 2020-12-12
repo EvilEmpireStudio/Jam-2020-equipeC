@@ -43,6 +43,7 @@ MonoBehaviour:
   rotationTime: 1.5
   isRunning: 0
   animator: {fileID: 8949670490627969244}
+  startRunSource: {fileID: 5231813979756600172}
   debug: {fileID: 0}
 --- !u!1001 &2184096977527247640
 PrefabInstance:
@@ -132,6 +133,12 @@ GameObject:
 --- !u!95 &8949670490627969244 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 7096799200669139908, guid: 8a458cfb68780184da2132610fe03052,
+    type: 3}
+  m_PrefabInstance: {fileID: 2184096977527247640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &5231813979756600172 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6256726634445178996, guid: 8a458cfb68780184da2132610fe03052,
     type: 3}
   m_PrefabInstance: {fileID: 2184096977527247640}
   m_PrefabAsset: {fileID: 0}
