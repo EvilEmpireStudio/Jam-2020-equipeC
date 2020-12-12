@@ -359,11 +359,13 @@ MonoBehaviour:
   defendZone: {fileID: 7303712893225197526}
   downParticles: {fileID: 0}
   animator: {fileID: 3330132617420264429}
+  timeRisingInvulnerable: 0.5
   gruntSource: {fileID: 833652700999467631}
   kickSource: {fileID: 9142687059416887305}
   deathSource: {fileID: 663367395658390745}
   speed: 10
   followStrengh: 0.75
+  risingUntil: 0
 --- !u!50 &7303712892159788607
 Rigidbody2D:
   serializedVersion: 4
@@ -449,7 +451,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 3
 --- !u!50 &7303712893225197527
 Rigidbody2D:
   serializedVersion: 4

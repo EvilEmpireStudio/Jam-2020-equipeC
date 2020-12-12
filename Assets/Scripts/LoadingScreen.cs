@@ -29,7 +29,7 @@ public class LoadingScreen : MonoBehaviour
         Debug.Log("loadingOperation started" + " - Time " + Time.timeSinceLevelLoad);
         while(loadingOperation.progress < 0.9f)
         {
-            var value = Mathf.Clamp01(loadingOperation.progress / 0.9f);
+            var value = Mathf.Clamp01(loadingOperation.progress);
             var prct = Mathf.RoundToInt(value * 100);
             Debug.Log("Loading... " + prct + "%" + " - Time " + Time.timeSinceLevelLoad);
             text.text = "Loading... " + prct + "%";
@@ -38,7 +38,7 @@ public class LoadingScreen : MonoBehaviour
             yield return null;
         }
 
-        var value2 = Mathf.Clamp01(loadingOperation.progress / 0.9f);
+        var value2 = Mathf.Clamp01(loadingOperation.progress);
         var prct2 = Mathf.RoundToInt(value2 * 100);
         // Debug.Log("Loading... " + prct + "%" + " - Time " + Time.timeSinceLevelLoad);
         text.text = "Loading... " + prct2 + "%";

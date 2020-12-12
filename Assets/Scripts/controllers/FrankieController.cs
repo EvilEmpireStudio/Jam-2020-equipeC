@@ -11,6 +11,7 @@ public class FrankieController : MonoBehaviour
     public ColliderList defendZone = default;
     public ParticleSystem downParticles = default;
     public Animator animator = default;
+    public float timeRisingInvulnerable = 0.5f;
 
     public AudioSource gruntSource = default;
     public AudioSource kickSource = default;
@@ -53,9 +54,11 @@ public class FrankieController : MonoBehaviour
         quaterback.FrankieDown(this);
     }
 
+    public float risingUntil = 0f;
     internal void Rise()
     {
         isDown = false;
+        risingUntil = Time.timeSinceLevelLoad + timeRisingInvulnerable;
         animator.Play("run");
     }
 
