@@ -12,6 +12,7 @@ public class FrankieController : MonoBehaviour
     public ParticleSystem downParticles = default;
     public Animator animator = default;
     public float timeRisingInvulnerable = 0.5f;
+    public string defendInputName = "DefendUp";
 
     public AudioSource gruntSource = default;
     public AudioSource kickSource = default;
@@ -35,7 +36,7 @@ public class FrankieController : MonoBehaviour
     private void Update() {
         if( isDown ) return;
 
-        if( Input.GetButtonDown("Defend") )
+        if( Input.GetButtonDown(defendInputName) )
             DestroyObstacles();
     }
     
